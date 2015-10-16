@@ -294,6 +294,10 @@ extension RichEditorView {
         runJS("RE.setUnorderedList();")
     }
 
+    public func blockquote() {
+        runJS("RE.setBlockquote()");
+    }
+    
     public func alignLeft() {
         runJS("RE.setJustifyLeft();")
     }
