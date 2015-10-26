@@ -63,7 +63,7 @@ public class RichBarButtonItem: UIBarButtonItem {
 /**
     RichEditorToolbar is UIView that contains the toolbar for actions that can be performed on a RichEditorView
 */
-public class RichEditorToolbar: UIView {
+@objc public class RichEditorToolbar: UIView {
 
     /**
         The delegate to receive events that cannot be automatically completed

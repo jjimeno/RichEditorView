@@ -55,7 +55,7 @@ import UIKit
 /**
     RichEditorView is a UIView that displays richly styled text, and allows it to be edited in a WYSIWYG fashion.
 */
-public class RichEditorView: UIView {
+@objc public class RichEditorView: UIView {
 
     /**
         The delegate that will receive callbacks when certain actions are completed.
