@@ -217,6 +217,9 @@ RE.insertLink = function(url, title) {
             sel.removeAllRanges();
             sel.addRange(range);
         }
+    }else{
+        var html = '<a href="' + url + '">' + title + '</a>';
+        RE.insertHTML(html);
     }
     RE.callback("input");
 }
