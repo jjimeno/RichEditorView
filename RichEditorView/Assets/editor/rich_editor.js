@@ -187,8 +187,8 @@ RE.setJustifyRight = function() {
     document.execCommand('justifyRight', false, null);
 }
 
-RE.insertImage = function(url, alt) {
-    var html = '<img src="' + url + '" alt="' + alt + '" />';
+RE.insertImage = function(url, alt, width) {
+    var html = '<img src="' + url + '" alt="' + alt + '" style="max-width:' + width + 'px" />';
     RE.insertHTML(html);
     RE.callback("input");
 }
