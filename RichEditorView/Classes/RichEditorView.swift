@@ -306,9 +306,9 @@ extension RichEditorView {
         runJS("RE.setJustifyRight();")
     }
     
-    public func insertImage(url: String, alt: String) {
+    public func insertImage(url: String, alt: String, width: Int = -1) {
         runJS("RE.prepareInsert();")
-        runJS("RE.insertImage('\(escape(url))', '\(escape(alt))');")
+        runJS("RE.insertImage('\(escape(url))', '\(escape(alt))', '\(width)');")
     }
     
     public func insertLink(href: String, title: String) {
