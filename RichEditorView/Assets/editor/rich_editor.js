@@ -188,11 +188,13 @@ RE.setJustifyRight = function() {
 }
 
 RE.insertImage = function(url, alt, width) {
-    var html = '<img src="' + url + '" alt="' + alt + '" style="max-width:' + width + 'px" />';
-    RE.insertHTML(html);
-    RE.callback("input");
+    var html;
+    if (width >= 0) {
+        var html = '<img src="' + url + '" alt="' + alt + '" style="max-width:' + width + 'px" />';
+    } else {
+        var html = '<img src="' + url + '" alt="' + alt + '" />';
 }
-
+    
 RE.setBlockquote = function() {
     document.execCommand('formatBlock', false, '<blockquote>');
 }
